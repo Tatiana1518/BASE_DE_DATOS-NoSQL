@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Vertical Responsive con Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="NoSQL.html">Introducción a NoSQL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tipos.html">Tipos de Bases de Datos NoSQL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="caracteristicas.html">Características de NoSQL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="vendesventajas.html">Ventajas y Desventajas de NoSQL</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="content text-center">
+        <h1>Tipos de Bases de Datos NoSQL</h1>
+    
+        <img src="img/img.png" alt="Bases de Datos Multi-Modelo" class="img-fluid">
+
+        <div class="row">
+            <div class="col-md-6">
+              <h2>Almacenes de Documentos</h2>
+              <img src="imagen_documentos.jpg" alt="Almacenes de Documentos" class="img-fluid">
+              <p><strong>Ejemplos:</strong> MongoDB, Couchbase, Firebase Firestore.</p>
+              <p><strong>Características:</strong> Almacenan datos en documentos similares a JSON, lo que permite una estructura flexible y anidada. Cada documento puede contener diferentes campos y tamaños de datos.</p>
+              <p><strong>Uso Común:</strong> Adecuado para aplicaciones web y móviles, especialmente cuando se necesita manejar datos no estructurados o semi-estructurados.</p>
+            </div>
+            <div class="col-md-6">
+              <h2>Bases de Datos Clave-Valor</h2>
+              <img src="imagen_clave_valor.jpg" alt="Bases de Datos Clave-Valor" class="img-fluid">
+              <p><strong>Ejemplos:</strong> Redis, DynamoDB, Riak.</p>
+              <p><strong>Características:</strong> Almacenan datos en pares clave-valor, donde cada valor está asociado con una clave única. Son rápidas y eficientes para operaciones de lectura y escritura simples.</p>
+              <p><strong>Uso Común:</strong> Caché de datos, sesiones de usuario, sistemas de colas.</p>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Almacenes de Columnas</h2>
+              <img src="imagen_columnas.jpg" alt="Almacenes de Columnas" class="img-fluid">
+              <p><strong>Ejemplos:</strong> Apache Cassandra, HBase, Vertica.</p>
+              <p><strong>Características:</strong> Almacenan datos en columnas en lugar de filas, lo que permite una recuperación eficiente de datos específicos. Son ideales para aplicaciones que requieren análisis de datos a gran escala.</p>
+              <p><strong>Uso Común:</strong> Análisis de big data, sistemas de almacenamiento de registros.</p>
+            </div>
+            <div class="col-md-6">
+              <h2>Bases de Datos de Grafos</h2>
+              <img src="imagen_grafos.jpg" alt="Bases de Datos de Grafos" class="img-fluid">
+              <p><strong>Ejemplos:</strong> Neo4j, Amazon Neptune, ArangoDB.</p>
+              <p><strong>Características:</strong> Modelan datos como nodos (entidades) y bordes (relaciones) entre ellos. Son eficientes para consultas que involucran relaciones complejas.</p>
+              <p><strong>Uso Común:</strong> Redes sociales, recomendaciones personalizadas, análisis de redes.</p>
+            </div>
+            <img src="img/infotipos.jpg" alt="Almacenes de Columnas" class="img-fluid">
+          </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
